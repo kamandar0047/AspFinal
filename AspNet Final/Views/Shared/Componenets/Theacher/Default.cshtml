@@ -1,0 +1,25 @@
+﻿@model  IEnumerable<Theacher>
+
+@foreach (var theacher in Model)
+{
+
+    <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="single-course" data-id="@theacher.Name.ToLower()">
+            <div class="course-img">
+                <a href="course-details.html">
+                    <img src="~/img/course/@theacher.Images" alt="course">
+                    <div class="course-hover">
+                        <i class="fa fa-link"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="course-content">
+                <h3>@theacher.Name</h3>
+                <span class="text-black-50"> $@theacher.Salary</span>
+                <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
+                <a class="default-btn" href="course-details.html">read more</a>
+            </div>
+            <div class="row justify-content-center"> <button class="btn btn-primary" id="loadmore">Load more.. </button>  </div>
+        </div>
+    </div>
+}
