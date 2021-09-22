@@ -5,23 +5,33 @@
 
 		<!-- Background Area Start -->
         <section id="slider-container" class="slider-area two"> 
-            <div class="slider-owl owl-theme owl-carousel"> 
+            <div class="slider-owl owl-theme owl-carousel">
+                @if (Model.Slides.Count() > 0)
+                {
+                    foreach (var slide in Model.Slides)
+                    {
+                     <img src="~/img/@slide.Image" style="height:100px; width:100px " alt="Alternate Text"/>                                                                                                   }
+                }
                 <!-- Start Slingle Slide -->
                 <div class="single-slide item" style="background-image: url(~/img/slider/slider2.jpg)">
                     <!-- Start Slider Content -->
-                    <div class="slider-content-area">  
+                    <div class="slider-content-area">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-10 col-md-offset-1"> 
+                                <div class="col-md-10 col-md-offset-1">
                                     <div class="slide-content-wrapper">
                                         <div class="slide-content text-center">
                                             <h2>EDUCATION MAKES HUMANITY </h2>
                                             <p>I must explain to you how all this mistaken idea of denouncing pleasure and prsing pain was born and I will give you a complete account of the system  </p>
-                                            @foreach (var category in Model.Categories)
+                                            @if (Model.Categories.Count() > 0)
                                             {
+                                                foreach (var category in Model.Categories)
+                                                {
 
-                                                <a class="default-btn" href="about.html" data-id="@category.Name.ToLower()">@category.Name.ToUpper()</a>
+                                                    <a class="default-btn" href="about.html" data-id="@category.Name.ToLower()">@category.Name.ToUpper()</a>
+                                                }
                                             }
+
 
 
                                         </div>
@@ -36,20 +46,20 @@
                 <!-- Start Slingle Slide -->
                 <div class="single-slide item" style="background-image: url(~/img/slider/slider3.jpg)">
                     <!-- Start Slider Content -->
-                    <div class="slider-content-area">   
+                    <div class="slider-content-area">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-10 col-md-offset-1"> 
+                                <div class="col-md-10 col-md-offset-1">
                                     <div class="slide-content-wrapper">
                                         <div class="slide-content text-center">
                                             <h2>EDUCATION MAKES HUMANITY </h2>
                                             <p>I must explain to you how all this mistaken idea of denouncing pleasure and prsing pain was born and I will give you a complete account of the system  </p>
 
-                                            @foreach (var category in Model.Categories)
-                                            {
+                                            @*@foreach (var category in Model.Categories)
+                                    {
 
-                                                <a class="default-btn" href="about.html" data-id="@category.Name.ToLower()">@category.Name.ToUpper()</a>
-                                            }
+                                        <a class="default-btn" href="about.html" data-id="@category.Name.ToLower()">@category.Name.ToUpper()</a>
+                                    }*@
 
                                         </div>
                                     </div>
@@ -63,10 +73,10 @@
                 <!-- Start Slingle Slide -->
                 <div class="single-slide item" style="background-image: url(~/img/slider/slider1.jpg)">
                     <!-- Start Slider Content -->
-                    <div class="slider-content-area">  
+                    <div class="slider-content-area">
                         <div class="container">
                             <div class="row">
-                                <div class="col-md-10 col-md-offset-1"> 
+                                <div class="col-md-10 col-md-offset-1">
                                     <div class="slide-content-wrapper">
                                         <div class="slide-content text-center">
                                             <h2>EDUCATION MAKES HUMANITY </h2>
@@ -80,7 +90,7 @@
                     </div>
                     <!-- Start Slider Content -->
                 </div>
-                <!-- End Slingle Slide -->								
+                <!-- End Slingle Slide -->
             </div>
         </section>
 		<!-- Background Area End -->
@@ -159,13 +169,13 @@
                                 </a>
                             </div>
                             <div class="course-content">
-                                @Html.Raw(Model.Introduction.Title)
-                                @Html.Raw(Model.Introduction.Description)
+                                @*@Html.Raw(Model.Introduction.Title)
+                                @Html.Raw(Model.Introduction.Description)*@
                             </div>
                         </div>
                     </div>
 
-                    @await Component.InvokeAsync("Theacher")
+                    @*@await Component.InvokeAsync("Theacher")*@
 
                     @*@foreach (var theacher in Model.Theachers)
         {
@@ -454,7 +464,7 @@
                             <p>I must explain to you how all this mistaken idea </p>
                         </div>
                         <div class="newsletter-form mc_embed_signup">
-                            <form action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <form action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" href="#" class="validate" target="_blank" novalidate>
                                 <div id="mc_embed_signup_scroll" class="mc-form"> 
                                     <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your e-mail address" required>
                                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->

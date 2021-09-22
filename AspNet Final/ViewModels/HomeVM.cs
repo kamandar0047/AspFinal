@@ -1,4 +1,5 @@
-﻿using AspNet_Final.Models;
+﻿using AspNet_Final.Migrations;
+using AspNet_Final.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,5 +13,6 @@ namespace AspNet_Final.ViewModels
         public Introduction Introduction { get; set; }
         public List<Theacher> Theachers { get; set; }
         public List<Category> Categories { get; set; }
+        public Blogs Blogs { get; set; } 
     }
 }

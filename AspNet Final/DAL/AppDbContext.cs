@@ -1,4 +1,5 @@
 ﻿using AspNet_Final.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AspNet_Final.DAL
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext:IdentityDbContext<AppUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) :base(options)
         {
@@ -18,5 +19,6 @@ namespace AspNet_Final.DAL
         public DbSet<Category> Categories { get; set; }
         public DbSet<Theacher> Theachers { get; set; }
         public DbSet<TheacherImage>TheacherImages { get; set; }
+        public DbSet<Blogs> Blogs { get; set; }
     }
 }

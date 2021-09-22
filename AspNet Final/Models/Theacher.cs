@@ -14,7 +14,7 @@ namespace AspNet_Final.Models
         public ICollection<TheacherImage> Images { get; set; }
         public int CategoryId { get; set; }
         public Nullable<DateTime> Deleted { get; set; }
-       
+       public bool IsDeleted { get; set; }
         public Category Category { get; set; }
         
     }

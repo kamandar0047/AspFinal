@@ -1,0 +1,63 @@
+﻿
+
+@{
+    ViewData["Title"] = "Index";
+    int count = 1;
+}
+<div class="row">
+    <div class="col-12 my-3">
+        <a asp-action="Create" class="btn btn-success">Create</a>
+    </div>
+    <div class="col-lg-12 ion-grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Categories</h5>
+                <table class="mb-0 table table-dark">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Category name</th>
+                            <th>IsDeleted</th>
+                            <th>Setting</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var blogs in Model)
+                            {
+                                <tr>
+
+
+                                    <td>@count</td>
+                                    <td> 
+                                        <img src="~/img/@blogs.Image" style="height:200px;width:200px;" alt="Alternate Text" />
+                                        <td>
+                                  
+                                    <td>
+                                        <a asp-action="Update" asp-root-id="blogs.Id" class="btn btn-danger">
+                                            <i class="fa-upload"> </i>
+                                        </a>
+                                        <form asp-action="Delete" asp-root-id="@blogs.Id" method="post">
+                                            <button type="submit" class="btn btn-warning">
+                                                <i class="zmdi-delete"> </i>
+                                            </button>
+                                        </form>
+                                       
+                                     
+                                    </td>
+                                </tr>
+                                count++;
+                            }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Script{
+
+    <partial name="_ValidationPartial">
+}
+
+
