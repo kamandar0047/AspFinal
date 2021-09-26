@@ -6,12 +6,81 @@
 		<!-- Background Area Start -->
         <section id="slider-container" class="slider-area two"> 
             <div class="slider-owl owl-theme owl-carousel">
-                @if (Model.Slides.Count() > 0)
-                {
-                    foreach (var slide in Model.Slides)
-                    {
-                     <img src="~/img/@slide.Image" style="height:100px; width:100px " alt="Alternate Text"/>                                                                                                   }
-                }
+
+            
+                <!-- Background Area Start -->
+                <section id="slider-container" class="slider-area two">
+                    <div class="slider-owl owl-theme owl-carousel">
+                        <!-- Start Slingle Slide -->
+                       
+                            <div class="single-slide item" style="background-image: url(~/img/slider/slider2.jpg)">
+                              
+                                <!-- Start Slider Content -->
+                                <div class="slider-content-area">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="slide-content-wrapper">
+                                                    <div class="slide-content text-center">
+                                                        <h2>EDUCATION MAKES HUMANITY </h2>
+                                                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and prsing pain was born and I will give you a complete account of the system  </p>
+                                                        <a class="default-btn" href="about.html">Learn more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Start Slider Content -->
+                            </div>
+                            <!-- End Slingle Slide -->
+                            <!-- Start Slingle Slide -->
+                            <div class="single-slide item" style="background-image: url(~/img/slider/slider3.jpg)">
+                                <!-- Start Slider Content -->
+                                <div class="slider-content-area">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="slide-content-wrapper">
+                                                    <div class="slide-content text-center">
+                                                        <h2>EDUCATION MAKES HUMANITY </h2>
+                                                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and prsing pain was born and I will give you a complete account of the system  </p>
+                                                        <a class="default-btn" href="about.html">Learn more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Start Slider Content -->
+                            </div>
+                            <!-- End Slingle Slide -->
+                            <!-- Start Slingle Slide -->
+                            <div class="single-slide item" style="background-image: url(~/img/slider/slider1.jpg)">
+                                <!-- Start Slider Content -->
+                                <div class="slider-content-area">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="slide-content-wrapper">
+                                                    <div class="slide-content text-center">
+                                                        <h2>EDUCATION MAKES HUMANITY </h2>
+                                                       
+                                          
+                                                        <p>I must explain to you how all this mistaken idea of denouncing pleasure and prsing pain was born and I will give you a complete account of the system  </p>
+                                                        <a class="default-btn" href="about.html">Learn more</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Start Slider Content -->
+                            </div>
+                            <!-- End Slingle Slide -->
+                        </div>
+                </section>
+                <!-- Background Area End -->
                 <!-- Start Slingle Slide -->
                 <div class="single-slide item" style="background-image: url(~/img/slider/slider2.jpg)">
                     <!-- Start Slider Content -->
@@ -23,14 +92,11 @@
                                         <div class="slide-content text-center">
                                             <h2>EDUCATION MAKES HUMANITY </h2>
                                             <p>I must explain to you how all this mistaken idea of denouncing pleasure and prsing pain was born and I will give you a complete account of the system  </p>
-                                            @if (Model.Categories.Count() > 0)
-                                            {
-                                                foreach (var category in Model.Categories)
-                                                {
+                                            @*@foreach (var category in Model.Categories)
+                                    {
 
-                                                    <a class="default-btn" href="about.html" data-id="@category.Name.ToLower()">@category.Name.ToUpper()</a>
-                                                }
-                                            }
+                                    <a class="default-btn" href="about.html" data-id="@category.Name.ToLower()">@category.Name.ToUpper()</a>
+                                    }*@
 
 
 
@@ -135,10 +201,7 @@
                     <div class="col-md-6 col-sm-6">
                         <div class="about-img">
 
-                            @foreach (var slide in Model.Slides)
-                         {
-                              <img src="~/img/@slide.Image" alt="about"> 
-                         }
+                         
 
                         </div>
                     </div>
@@ -162,7 +225,7 @@
                         <div class="single-course">
                             <div class="course-img">
                                 <a href="course-details.html">
-                                    <img src="~/img/@Model.Introduction.Image" alt="course">
+                                    @*<img src="~/img/@Model.Blogs.Image" alt="course">*@
                                     <div class="course-hover">
                                         <i class="fa fa-link"></i>
                                     </div>
@@ -170,56 +233,13 @@
                             </div>
                             <div class="course-content">
                                 @*@Html.Raw(Model.Introduction.Title)
-                                @Html.Raw(Model.Introduction.Description)*@
-                            </div>
+                                @Html.Raw(Model.Introduction.Description)
+                            </div>*@
                         </div>
                     </div>
 
-                    @*@await Component.InvokeAsync("Theacher")*@
 
-                    @*@foreach (var theacher in Model.Theachers)
-        {
-
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="single-course" data-id="@theacher.Name.ToLower()">
-                    <div class="course-img">
-                        <a href="course-details.html">
-                            <img src="~/img/course/@theacher.Images" alt="course">
-                            <div class="course-hover">
-                                <i class="fa fa-link"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="course-content">
-                        <h3>@theacher.Name</h3>
-                        <span class="text-black-50"> $@theacher.Salary</span>
-                        <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-                        <a class="default-btn" href="course-details.html">read more</a>
-                    </div>
-                </div>
-            </div>
-        }*@
-                    <div class="col-md-4 hidden-sm col-xs-12">
-                        <div class="single-course">
-                            <div class="course-img">
-                                <a href="course-details.html">
-                                    <img src="~/img/course/course3.jpg" alt="course">
-                                    <div class="course-hover">
-                                        <i class="fa fa-link"></i>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="course-content">
-                                <h3><a href="course-details.html">micro biology</a></h3>
-                                <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-                                <a class="default-btn" href="course-details.html">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Courses Area End -->
+           
         <!-- Notice Start -->
         <section class="notice-area two pt-140">
             <div class="container">

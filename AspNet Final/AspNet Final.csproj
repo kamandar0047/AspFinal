@@ -10,6 +10,8 @@
     <Compile Remove="Migrations\20210919052101_CreateIntroductionTable.Designer.cs" />
     <Compile Remove="Migrations\20210921014222_CreateBlogTable.cs" />
     <Compile Remove="Migrations\20210921014222_CreateBlogTable.Designer.cs" />
+    <Compile Remove="Migrations\20210922221533_Table.cs" />
+    <Compile Remove="Migrations\20210922221533_Table.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

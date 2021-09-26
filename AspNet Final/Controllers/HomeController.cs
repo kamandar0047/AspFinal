@@ -20,9 +20,7 @@ namespace AspNet_Final.Controllers
         }
         public async Task<IActionResult> Index()
         {
-        
-         
-            return View();
+                return View();
         }
         
 

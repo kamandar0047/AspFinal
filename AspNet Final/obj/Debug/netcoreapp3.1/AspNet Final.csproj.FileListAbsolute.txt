@@ -159,7 +159,6 @@ C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\
 C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Categories\Edit.cshtml.g.cs
 C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Categories\Index.cshtml.g.cs
 C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\Razor\Views\Theacher\Index.cshtml.g.cs
-C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Blogs\Index.cshtml.g.cs
 C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Blogs\Create.cshtml.g.cs
 C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\AspNet Final.csprojAssemblyReference.cache
 C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -179,3 +178,5 @@ C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\
 C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Account\Register.cshtml.g.cs
 C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Account\Login.cshtml.g.cs
 C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\User\Index.cshtml.g.cs
+C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Shared\la.cshtml.g.cs
+C:\Users\Ideapad\source\repos\AspNet Final\AspNet Final\obj\Debug\netcoreapp3.1\Razor\Areas\AdminPanel\Views\Blogs\Index.cshtml.g.cs
